@@ -1,58 +1,115 @@
-# Smart_Resume_Analyser
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
-[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)   
-Check out the live demo: https://www.youtube.com/watch?v=3oNHNVa-kWE
+# 📄 Smart Resume Analyser – AI-Powered Resume Insights 💡  
+> An intelligent resume analyzer built with ❤️ using **Python, Streamlit, PDFMiner & PyResparser**
 
-## Source
-- Extracting user's information from the Resume, I used [PyResparser](https://omkarpathak.in/pyresparser/)
-- Extracting Resume PDF into Text, I used [PDFMiner](https://pypi.org/project/pdfminer/).
+![GitHub Repo stars](https://img.shields.io/github/stars/Shristirajpoot/Resume_analyser?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/Shristirajpoot/Resume_analyser?color=brightgreen)
+![Built with](https://img.shields.io/badge/Built%20with-Python%20%7C%20Streamlit%20%7C%20Machine%20Learning-blue)
+
+---
+
+## 🌟 Overview
+**Smart Resume Analyser** is a powerful AI-based web app that analyzes resumes to extract key details and provides users with:
+- 🎯 Resume scoring  
+- 📚 Skill & course recommendations  
+- 📹 Relevant YouTube videos  
+- 💼 Career suggestions  
+- 📝 Resume writing tips  
+
+Live Demo: [📺 Watch on YouTube](https://www.youtube.com/watch?v=3oNHNVa-kWE)
+
+---
+
+## 🖼️ Screenshots
+
+### 👤 User Interface
+| Upload Resume | Analyzed Data |
+|---------------|----------------|
+| ![](./Screenshot%20(32).png) | ![](./Screenshot%20(33).png) |
+| ![](./Screenshot%20(34).png) | ![](./Screenshot%20(35).png) |
+| ![](./Screenshot%20(36).png) | ![](./Screenshot%20(37).png) |
+
+### 🛠️ Admin Panel
+| Dashboard | Resume Review |
+|-----------|----------------|
+| ![](./Screenshot%20(38).png) | ![](./Screenshot%20(39).png) |
+
+| Website |
+|------------------|
+| ![Screenshot11](./Screenshot%20(31).png) |
+
+---
+
+## 🚀 Features
+- 🔐 User/Admin login system  
+- 🧾 Resume parsing using NLP  
+- 🧠 Career & course recommendations  
+- 🧪 Resume scoring based on skills and experience  
+- 📺 Suggested learning resources (YouTube, etc.)  
+- ✍️ Resume improvement tips  
+- 📊 Admin dashboard to review uploads  
+
+---
+
+## 🗂️ Project Structure
+```plaintext
+Resume_analyser/
+├── main.py                 # Streamlit web app entry point
+├── Courses.py              # Contains course & video data
+├── requirements.txt        # Python dependencies
+├── Uploaded_Resumes/       # Folder for user-uploaded resumes
+├── Classifier.py           # KNN classifier logic
+├── procfile, setup.sh      # Heroku deployment files
+├── SRA_Logo.jpg            # App logo
+├── *.png                   # UI screenshots
+└── README.md               # You're reading it!
+```
+## ⚙️ Getting Started
+
+### 📥 Clone the repository
+```bash
+git clone https://github.com/Shristirajpoot/Resume_analyser.git
+cd Resume_analyser
+```
+### 🧪 Install dependencies
+```bash
+
+pip install -r requirements.txt
+```
+### ▶️ Run the app
+```bash
+
+streamlit run main.py
+```
+Admin login credentials:
+```makefile
+
+Username: naman_jain
+Password: naman@123
+```
+Make sure XAMPP or any local server is running (Apache + SQL).
+
+## 📦 Built With
+- 🐍 Python 3
+
+- 🖥️ Streamlit – web interface
+
+- 📄 PDFMiner – extract text from resumes
+
+- 🤖 PyResparser – NLP resume parser
+
+- 📊 Scikit-learn – KNN-based predictions
+
+- 💡 Custom logic for recommendations
+
+## 👩‍💻 Author
+### Shristi Rajpoot
+- 📧 shristirajpoot369@gmail.com
+- 🔗 GitHub @Shristirajpoot
+
+## 📄 License
+This project is licensed under the MIT License — feel free to use, modify & share with attribution.
+
+### 🌟 If you find Gestura helpful, please ⭐ star the repo and spread the
 
 
-## Screenshots
 
-## User side
-<img src="https://github.com/bobbycodder/RESUME-ANALYSER/blob/main/Screenshot%20(31).png">
-<img src="https://github.com/bobbycodder/RESUME-ANALYSER/blob/main/Screenshot%20(32).png">
-<img src="https://github.com/bobbycodder/RESUME-ANALYSER/blob/main/Screenshot%20(33).png">
-<img src="https://github.com/bobbycodder/RESUME-ANALYSER/blob/main/Screenshot%20(34).png">
-<img src="https://github.com/bobbycodder/RESUME-ANALYSER/blob/main/Screenshot%20(35).png">
-<img src="https://github.com/bobbycodder/RESUME-ANALYSER/blob/main/Screenshot%20(36).png">
-<img src="https://github.com/bobbycodder/RESUME-ANALYSER/blob/main/Screenshot%20(37).png">
-
-## Admin Side
-
-<img src="https://github.com/bobbycodder/RESUME-ANALYSER/blob/main/Screenshot%20(38).png">
-<img src="https://github.com/bobbycodder/RESUME-ANALYSER/blob/main/Screenshot%20(39).png">
-
-
-
-## Features
-- User's & Admin Section
-- Resume Score
-- Career Recommendations
-- Resume writing Tips suggestions
-- Courses Recommendations
-- Skills Recommendations
-- Youtube video recommendations
-
-## Usage
-- Clone my repository.
-- Open CMD in working directory.
-- Run following command.
-  ```
-  pip install -r requirements.txt
-  ```
-- `main.py` is the main Python file of Streamlit Web-Application. 
-- `Courses.py` is the Python file that contains courses and youtube video links.
-- Download XAMP or any other control panel, and turn on the Apache & SQL service.
-- To run app, write following command in CMD. or use any IDE.
-  ```
-  streamlit run App.py
-  ```
-- `Uploaded_Resumes` folder is contaning the user's uploaded resumes.
-- `Classifier.py` is the main file which is containing a KNN Algorithm.
-
-- Admin side credentials is `naman_jain` and password is `naman@123`. 
-
-
-## Just follow☝️ me and Star⭐ my repository 
